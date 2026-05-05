@@ -1,7 +1,15 @@
+'use client';
+
+import { useState } from 'react';
 import Link from 'next/link';
 import styles from './Navbar.module.css';
 
 export default function Navbar() {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleMenu = () => setIsOpen(!isOpen);
+  const closeMenu = () => setIsOpen(false);
+
   return (
     <header className={styles.header}>
       <div className={styles.topBar}>
@@ -26,16 +34,23 @@ export default function Navbar() {
       </div>
       <nav className={`${styles.navbar} glass`}>
         <div className={`${styles.container} container`}>
-          <Link href="/" className={styles.logo}>
+          <Link href="/" className={styles.logo} onClick={closeMenu}>
             Harper<span>Seguros</span>
           </Link>
-          <div className={styles.links}>
-            <Link href="/#a-harper">A Harper</Link>
-            <Link href="/#servicos">Serviços</Link>
-            <Link href="/#consorcios">Consórcios</Link>
-            <Link href="/#sobre">Sobre</Link>
-            <Link href="/#contato">Contato</Link>
-            <Link href="/#contato" className="btn-primary">
+          
+          <button className={`${styles.menuToggle} ${isOpen ? styles.active : ''}`} onClick={toggleMenu}>
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+
+          <div className={`${styles.links} ${isOpen ? styles.open : ''}`}>
+            <Link href="/#a-harper" onClick={closeMenu}>A Harper</Link>
+            <Link href="/#servicos" onClick={closeMenu}>Serviços</Link>
+            <Link href="/#consorcios" onClick={closeMenu}>Consórcios</Link>
+            <Link href="/#sobre" onClick={closeMenu}>Sobre</Link>
+            <Link href="/#contato" onClick={closeMenu}>Contato</Link>
+            <Link href="/#contato" className="btn-primary" onClick={closeMenu}>
               Cotação Grátis
             </Link>
           </div>
