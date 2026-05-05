@@ -1,0 +1,77 @@
+.hero {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(rgba(0, 51, 102, 0.85), rgba(0, 51, 102, 0.4)), 
+              url('/hero-bg.png') center/cover no-repeat;
+  padding-top: 80px;
+  overflow: hidden;
+}
+
+.container {
+  position: relative;
+  z-index: 2;
+}
+
+.content {
+  max-width: 700px;
+  color: white;
+}
+
+.badge {
+  display: inline-block;
+  padding: 0.4rem 1rem;
+  background: var(--secondary);
+  color: white;
+  border-radius: 50px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.content h1 {
+  font-size: 4rem;
+  color: white;
+  margin-bottom: 1.5rem;
+}
+
+.highlight {
+  color: var(--secondary);
+}
+
+.content p {
+  font-size: 1.2rem;
+  margin-bottom: 2.5rem;
+  opacity: 0.9;
+  line-height: 1.8;
+}
+
+.actions {
+  display: flex;
+  gap: 1rem;
+}
+
+.btnSecondary {
+  padding: 0.8rem 1.5rem;
+  border-radius: var(--radius);
+  font-weight: 600;
+  border: 2px solid white;
+  color: white;
+}
+
+.btnSecondary:hover {
+  background: white;
+  color: var(--primary);
+}
+
+@media (max-width: 768px) {
+  .content h1 {
+    font-size: 2.5rem;
+  }
+  .actions {
+    flex-direction: column;
+  }
+}
