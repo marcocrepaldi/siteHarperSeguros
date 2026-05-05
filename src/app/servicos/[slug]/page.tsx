@@ -3,7 +3,15 @@ import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import styles from './ServiceDetail.module.css';
 
-const servicesData: Record<string, any> = {
+interface ServiceInfo {
+  title: string;
+  description: string;
+  content: string;
+  benefits: string[];
+  icon: string;
+}
+
+const servicesData: Record<string, ServiceInfo> = {
   auto: {
     title: 'Seguro Automotivo',
     description: 'A proteção que seu carro merece com a confiança que você precisa.',

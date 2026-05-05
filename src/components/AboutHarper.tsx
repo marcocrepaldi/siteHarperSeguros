@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import styles from './AboutHarper.module.css';
 
 export default function AboutHarper() {
@@ -48,7 +49,13 @@ export default function AboutHarper() {
           
           <div className={styles.introImage}>
             <div className={`${styles.imageWrapper} glass`}>
-              <img src="https://images.unsplash.com/photo-1600880212340-02d956381b08?auto=format&fit=crop&q=80&w=800" alt="Equipe Harper" />
+              <Image 
+                src="https://images.unsplash.com/photo-1600880212340-02d956381b08?auto=format&fit=crop&q=80&w=800" 
+                alt="Equipe Harper" 
+                width={800}
+                height={600}
+                style={{ objectFit: 'cover' }}
+              />
               <div className={styles.experienceBadge}>
                 <h3>+30 Anos</h3>
                 <p>Experiência dos sócios</p>
