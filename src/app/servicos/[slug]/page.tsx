@@ -2,6 +2,7 @@ import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import styles from './ServiceDetail.module.css';
+import ConsorcioImovelDetail from './ConsorcioImovelDetail';
 
 interface ServiceInfo {
   title: string;
@@ -316,8 +317,8 @@ const servicesData: Record<string, ServiceInfo> = {
     icon: '⚕️',
   },
   'beneficios-personalizados': {
-    title: 'Gestão de Benefícios Personalizados',
-    description: 'Portfólio de benefícios adaptado às necessidades reais da sua empresa.',
+    title: 'Benefícios Personalizados',
+    description: 'Portfólio de benefícios adaptado às necessidades e ao perfil da sua empresa.',
     content: 'Cada empresa é única - e os benefícios também podem ser. Conte com a Harper Seguros para estruturar um portfólio de benefícios adaptado às necessidades e ao perfil da sua empresa e dos seus colaboradores. Mais cuidado, mais resultados.',
     benefits: [
       'Análise consultiva do perfil da empresa',
@@ -325,7 +326,7 @@ const servicesData: Record<string, ServiceInfo> = {
       'Benchmarking de mercado',
       'Suporte contínuo no RH e gestão de sinistralidade',
     ],
-    icon: '🎁',
+    icon: '🖋️',
   },
 };
 
@@ -355,6 +356,10 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
 
   if (!service) {
     notFound();
+  }
+
+  if (slug === 'consorcio-imovel') {
+    return <ConsorcioImovelDetail />;
   }
 
   return (

@@ -114,9 +114,9 @@ const corporateServices = [
     slug: 'medicina-trabalho',
   },
   {
-    title: 'Benefícios Flex',
-    description: 'Portfólio de benefícios adaptado às necessidades reais da sua empresa.',
-    icon: '🎁',
+    title: 'Benefícios Personalizados',
+    description: 'Portfólio de benefícios adaptado às necessidades e ao perfil da sua empresa.',
+    icon: '🖋️',
     slug: 'beneficios-personalizados',
   },
   {

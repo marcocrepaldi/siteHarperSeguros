@@ -1,0 +1,221 @@
+.page {
+  background-color: var(--white);
+  padding-top: 110px; /* Altura aproximada do Navbar + TopBar */
+}
+
+.hero {
+  position: relative;
+  height: 80vh;
+  min-height: 600px;
+  display: flex;
+  align-items: center;
+  color: white;
+  overflow: hidden;
+}
+
+.heroImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.heroImage::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.4) 50%, rgba(0,0,0,0.2) 100%);
+}
+
+.heroContent {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+}
+
+.heroContent h1 {
+  font-size: 4.5rem;
+  line-height: 1.1;
+  margin-bottom: 1.5rem;
+  font-weight: 800;
+}
+
+.heroContent h1 span {
+  color: #10b981;
+}
+
+.heroContent p {
+  font-size: 1.5rem;
+  opacity: 0.9;
+  margin-bottom: 2.5rem;
+}
+
+.statsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.statCard {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 1.5rem;
+  border-radius: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  text-align: center;
+}
+
+.statCard h3 {
+  font-size: 2rem;
+  color: #10b981;
+  margin-bottom: 0.5rem;
+}
+
+.statCard p {
+  font-size: 0.9rem;
+  margin-bottom: 0;
+}
+
+/* Strategy Section */
+.strategySection {
+  padding: 10rem 0;
+  background: var(--bg-alt);
+}
+
+.strategyGrid {
+  display: grid;
+  grid-template-columns: 40% 60%; /* Mais espaço para o texto */
+  gap: 4rem;
+  align-items: center;
+}
+
+.strategyText h2 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+.strategyText h2 span {
+  color: var(--secondary);
+}
+
+.strategyList {
+  list-style: none;
+  padding: 0;
+}
+
+.strategyItem {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.strategyNumber {
+  width: 40px;
+  height: 40px;
+  background: var(--secondary);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.strategyItem h4 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: var(--primary);
+}
+
+/* Comparison Table */
+.comparisonSection {
+  padding: 10rem 0;
+}
+
+.tableWrapper {
+  overflow-x: auto;
+  margin-top: 4rem;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 1.5rem;
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+}
+
+.table th, .table td {
+  padding: 2rem;
+  text-align: left;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.table th {
+  background: var(--primary);
+  color: white;
+  font-size: 1.2rem;
+}
+
+.highlight {
+  background: rgba(16, 185, 129, 0.05);
+  color: #059669;
+  font-weight: 700;
+}
+
+/* Cases Section */
+.casesSection {
+  padding: 10rem 0;
+  background: var(--primary);
+  color: white;
+}
+
+.casesGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  margin-top: 4rem;
+}
+
+.caseCard {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 3rem;
+  border-radius: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.caseCard h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  color: #10b981;
+}
+
+/* CTA Footer */
+.ctaFooter {
+  padding: 8rem 0;
+  text-align: center;
+  background: linear-gradient(135deg, var(--primary), #1e293b);
+  color: white;
+}
+
+.ctaFooter h2 {
+  color: white !important;
+}
+
+.ctaFooter h2 span {
+  color: #10b981;
+}
+
+@media (max-width: 992px) {
+  .heroContent h1 { font-size: 3rem; }
+  .strategyGrid { grid-template-columns: 1fr; }
+  .casesGrid { grid-template-columns: 1fr; }
+}
