@@ -2,6 +2,7 @@ import Link from "next/link";
 import Hero from "@/components/Hero";
 import AboutHarper from "@/components/AboutHarper";
 import ServicesGrid from "@/components/ServicesGrid";
+import KnowMore from "@/components/KnowMore";
 import ContactForm from "@/components/ContactForm";
 import styles from "./page.module.css";
 
@@ -11,6 +12,7 @@ export default function Home() {
       <Hero />
       <AboutHarper />
       <ServicesGrid />
+      <KnowMore />
       
       <section id="consorcios" className="section-padding" style={{ backgroundColor: 'var(--bg-alt)' }}>
         <div className="container">
