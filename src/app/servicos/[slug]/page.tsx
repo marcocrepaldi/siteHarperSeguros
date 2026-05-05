@@ -255,6 +255,78 @@ const servicesData: Record<string, ServiceInfo> = {
     ],
     icon: '🦷',
   },
+  'vida-empresarial': {
+    title: 'Seguro de Vida Empresarial',
+    description: 'Tranquilidade e segurança financeira para seus colaboradores e famílias.',
+    content: 'Imprevistos podem acontecer a qualquer momento. O Seguro de Vida garante tranquilidade e segurança financeira para os colaboradores e suas famílias em casos de morte ou afastamento por acidente ou doença. Uma proteção essencial em tempos incertos.',
+    benefits: [
+      'Cobertura para morte e invalidez',
+      'Assistência funeral individual ou familiar',
+      'Indenização por doenças graves',
+      'Capital segurado flexível por colaborador',
+    ],
+    icon: '💙',
+  },
+  'saude-empresarial': {
+    title: 'Plano de Saúde Empresarial',
+    description: 'Acesso a tratamentos de qualidade, promovendo saúde e qualidade de vida.',
+    content: 'Saúde é prioridade! Empresas que oferecem Seguro Saúde demonstram cuidado genuíno com seus colaboradores e seus dependentes. Este benefício proporciona acesso a consultas, exames e tratamentos de qualidade, promovendo mais saúde e qualidade de vida.',
+    benefits: [
+      'Ampla rede de hospitais e laboratórios',
+      'Opções com e sem coparticipação',
+      'Atendimento nacional e telemedicina',
+      'Gestão de saúde populacional para a empresa',
+    ],
+    icon: '🩺',
+  },
+  'odonto-empresarial': {
+    title: 'Plano Odontológico Empresarial',
+    description: 'Bem-estar e saúde bucal completa para o seu time de colaboradores.',
+    content: 'Bem-estar e saúde também passa pelo sorriso. O Seguro Odontológico facilita o acesso a tratamentos odontológicos e cuidados preventivos, reforçando o compromisso da empresa com a saúde completa dos seus colaboradores.',
+    benefits: [
+      'Cobertura para limpezas e restaurações',
+      'Tratamentos de canal e gengiva',
+      'Radiografias e urgências inclusas',
+      'Custo reduzido por beneficiário',
+    ],
+    icon: '🦷',
+  },
+  'previdencia-privada': {
+    title: 'Previdência Privada Empresarial',
+    description: 'Diferencial competitivo para ajudar seus funcionários no planejamento do futuro.',
+    content: 'Pensar no futuro dos colaboradores é um diferencial competitivo. A Previdência Privada permite que empresas ajudem seus funcionários a se planejarem financeiramente para a aposentadoria, fortalecendo o vínculo e a confiança entre empresa e equipe.',
+    benefits: [
+      'Incentivo fiscal para a empresa (Lucro Real)',
+      'Contribuições flexíveis (Empresa e Colaborador)',
+      'Ferramenta poderosa de retenção de talentos',
+      'Diversas opções de fundos de investimento',
+    ],
+    icon: '💰',
+  },
+  'medicina-trabalho': {
+    title: 'Medicina e Segurança do Trabalho',
+    description: 'Ambientes mais saudáveis e produtivos com foco em prevenção.',
+    content: 'Mais do que uma exigência legal, a Medicina do Trabalho, quando bem aplicada, gera ambientes mais saudáveis, seguros e produtivos. Investir em prevenção significa menos afastamentos, mais segurança para a empresa e maior satisfação dos colaboradores.',
+    benefits: [
+      'Gestão de PCMSO e PPRA/PGR',
+      'Exames admissionais e demissionais',
+      'Laudos de insalubridade e periculosidade',
+      'Treinamentos de segurança e CIPA',
+    ],
+    icon: '⚕️',
+  },
+  'beneficios-personalizados': {
+    title: 'Gestão de Benefícios Personalizados',
+    description: 'Portfólio de benefícios adaptado às necessidades reais da sua empresa.',
+    content: 'Cada empresa é única - e os benefícios também podem ser. Conte com a Harper Seguros para estruturar um portfólio de benefícios adaptado às necessidades e ao perfil da sua empresa e dos seus colaboradores. Mais cuidado, mais resultados.',
+    benefits: [
+      'Análise consultiva do perfil da empresa',
+      'Estruturação de benefícios flexíveis',
+      'Benchmarking de mercado',
+      'Suporte contínuo no RH e gestão de sinistralidade',
+    ],
+    icon: '🎁',
+  },
 };
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {

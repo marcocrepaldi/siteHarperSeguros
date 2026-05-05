@@ -84,6 +84,42 @@ const corporateServices = [
     slug: 'empresarial',
   },
   {
+    title: 'Vida Empresarial',
+    description: 'Tranquilidade e segurança financeira para seus colaboradores e famílias.',
+    icon: '💙',
+    slug: 'vida-empresarial',
+  },
+  {
+    title: 'Saúde PME/Corp',
+    description: 'Acesso a tratamentos de qualidade, promovendo saúde e qualidade de vida.',
+    icon: '🩺',
+    slug: 'saude-empresarial',
+  },
+  {
+    title: 'Odonto PME/Corp',
+    description: 'Bem-estar e saúde bucal completa para o seu time de colaboradores.',
+    icon: '🦷',
+    slug: 'odonto-empresarial',
+  },
+  {
+    title: 'Previdência Privada',
+    description: 'Diferencial competitivo para ajudar seus funcionários no planejamento do futuro.',
+    icon: '💰',
+    slug: 'previdencia-privada',
+  },
+  {
+    title: 'Medicina do Trabalho',
+    description: 'Ambientes mais saudáveis e produtivos com foco em prevenção e segurança.',
+    icon: '⚕️',
+    slug: 'medicina-trabalho',
+  },
+  {
+    title: 'Benefícios Flex',
+    description: 'Portfólio de benefícios adaptado às necessidades reais da sua empresa.',
+    icon: '🎁',
+    slug: 'beneficios-personalizados',
+  },
+  {
     title: 'D&O / E&O',
     description: 'Seguro de responsabilidade civil para diretores, conselheiros e profissionais.',
     icon: '⚖️',
